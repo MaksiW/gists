@@ -18,7 +18,7 @@ if create_new_table:
     try:
         db.execute('CREATE TABLE gists ("id" SERIAL PRIMARY KEY, "gist" TEXT NULL DEFAULT NULL , "datetime" TIMESTAMP DEFAULT NOW())')
     except:
-        print('таблмца не создалась')
+        print('таблица не создалась')
 
 his_string = ''
 total_update = 0  # колличество обновлений
